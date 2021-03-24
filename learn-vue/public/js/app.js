@@ -1884,7 +1884,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      message: 'Bà con cô bác, ai bị bệnh xương khớp, hãy gọi cho tôi'
+    };
+  },
+  computed: {
+    revertMessage: function revertMessage() {
+      return this.message.split('').reverse().join('');
+    }
+  }
+});
 
 /***/ }),
 
@@ -6428,7 +6439,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".my-component[data-v-f79de9d4] {\n  color: red;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".my-component[data-v-f79de9d4] {\n  color: #ff0000;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37986,7 +37997,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-component" }, [
-    _vm._v("Đây là component đầu tiên của tôi")
+    _vm._v(_vm._s(_vm.revertMessage))
   ])
 }
 var staticRenderFns = []
