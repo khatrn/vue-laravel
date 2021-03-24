@@ -1884,7 +1884,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      message: 'Tham số'
+    };
+  },
+  methods: {
+    sayHello: function sayHello(text) {
+      return text.toUpperCase();
+    }
+  }
+});
 
 /***/ }),
 
@@ -37986,7 +38000,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-component" }, [
-    _vm._v("Đây là component đầu tiên của tôi")
+    _c("div", [_vm._v(_vm._s(_vm.sayHello(_vm.message)))]),
+    _vm._v(" "),
+    _c("div", [
+      _c("button", { on: { click: _vm.sayHello } }, [_vm._v("Enter")])
+    ])
   ])
 }
 var staticRenderFns = []
