@@ -1884,15 +1884,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      message: 'Bà con cô bác, ai bị bệnh xương khớp, hãy gọi cho tôi'
+      message: {
+        type: 'Age',
+        text: '25 tuổi'
+      }
     };
   },
+  methods: {
+    changeType: function changeType() {
+      this.message.type = 'Age After Year';
+    },
+    changeMessage: function changeMessage() {
+      this.message.text = '26 tuổi';
+    }
+  },
   computed: {
-    revertMessage: function revertMessage() {
-      return this.message.split('').reverse().join('');
+    getType: function getType() {
+      return this.message.type;
+    },
+    getMessage: function getMessage() {
+      return this.message.text;
+    }
+  },
+  watch: {
+    getType: function getType() {
+      console.log('Kiểu đã thay đổi');
+    },
+    getMessage: function getMessage() {
+      console.log('Text đã thay đổi');
     }
   }
 });
@@ -37997,7 +38024,19 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-component" }, [
-    _vm._v(_vm._s(_vm.revertMessage))
+    _c("div", [_vm._v("Kiểu tin nhắn: " + _vm._s(_vm.message.type))]),
+    _vm._v(" "),
+    _c("div", [_vm._v("Mess: " + _vm._s(_vm.message.text))]),
+    _vm._v(" "),
+    _c("div", [
+      _c("button", { on: { click: _vm.changeType } }, [_vm._v("Đổi kiểu")])
+    ]),
+    _vm._v(" "),
+    _c("div", [
+      _c("button", { on: { click: _vm.changeMessage } }, [
+        _vm._v("Đổi tin nhắn")
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
