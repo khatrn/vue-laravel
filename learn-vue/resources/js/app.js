@@ -22,7 +22,7 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('my-component', require('./components/MyComponent').default);
 Vue.component('conditional-rendering', require('./components/ConditionalRendering').default);
-
+Vue.component('list-rendering', require('./components/ListRendering').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
