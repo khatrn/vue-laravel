@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id="app">
-            <force-update></force-update>
+            <class-binding></class-binding>
         </div>
         <script src="/js/app.js"></script>
     </body>
