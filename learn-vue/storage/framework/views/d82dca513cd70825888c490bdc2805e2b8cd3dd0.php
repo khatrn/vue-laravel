@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id="app">
-            <life-cycle></life-cycle>
+            <force-update></force-update>
         </div>
         <script src="/js/app.js"></script>
     </body>
