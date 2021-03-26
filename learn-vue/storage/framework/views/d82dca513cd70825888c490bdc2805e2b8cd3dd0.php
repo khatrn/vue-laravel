@@ -7,10 +7,7 @@
     </head>
     <body>
         <div id="app">
-            <my-component></my-component>
-            <conditional-rendering></conditional-rendering>
-            <list-rendering></list-rendering>
-            <user-dashboard></user-dashboard>
+            <life-cycle></life-cycle>
         </div>
         <script src="/js/app.js"></script>
     </body>

@@ -36,6 +36,12 @@ export default {
         listCompleteTodo() {
             return this.todos.filter(item => item.isComplete)
         }
+    },
+    beforeDestroy() {
+        console.log('Trước khi hủy')
+    },
+    destroyed(){
+        console.log('Sau khi hủy')
     }
 }
 </script>
