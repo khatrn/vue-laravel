@@ -24,6 +24,10 @@ Vue.component('my-component', require('./components/MyComponent').default);
 Vue.component('user-dashboard', require('./components/UserDashboard').default);
 Vue.component('conditional-rendering', require('./components/ConditionalRendering').default);
 Vue.component('list-rendering', require('./components/ListRendering').default);
+Vue.component('life-cycle', require('./components/LifeCycle').default);
+Vue.component('force-update', require('./components/ForceUpdate').default);
+Vue.component('form-binding', require('./components/FormBinding').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
