@@ -27,6 +27,7 @@ Vue.component('list-rendering', require('./components/ListRendering').default);
 Vue.component('life-cycle', require('./components/LifeCycle').default);
 Vue.component('force-update', require('./components/ForceUpdate').default);
 Vue.component('event-handling', require('./components/EventHandling').default);
+Vue.component('form-binding', require('./components/FormBinding').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

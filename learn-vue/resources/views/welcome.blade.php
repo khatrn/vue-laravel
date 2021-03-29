@@ -8,6 +8,7 @@
     <body>
         <div id="app">
             <event-handling></event-handling>
+            <form-binding></form-binding>
         </div>
         <script src="/js/app.js"></script>
     </body>
